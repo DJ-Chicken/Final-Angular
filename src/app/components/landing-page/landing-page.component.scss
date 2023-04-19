@@ -1,0 +1,76 @@
+/* ------------------------------------- Landing Section ------------------------------------- */
+
+.img-crop1-img {
+  background-image: url(../../../assets/images/landing.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 15% 50%);
+}
+
+.img-crop1-img-bg {
+  clip-path: polygon(0 0, 5% 0, 20% 50%, 5% 100%, 0 100%, 0 50%);
+  min-height: 600px;
+}
+
+/* ------------------------------------- AD Section ------------------------------------- */
+
+.img-crop2-img {
+  background-image: url(../../../assets/images/image2.png);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+}
+
+.img-crop2-img-bg {
+  clip-path: polygon(95% 0, 100% 0, 75% 100%, 70% 100%);
+  background: rgba(23, 60, 62, 0.76);
+  min-height: 450px;
+}
+
+/* ------------------------------------- Storage Section ------------------------------------- */
+
+.bg-image-storage {
+  background-image: url(../../../assets/images/image1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 450px;
+}
+
+/* ------------------------------------- AI Platform Section ------------------------------------- */
+
+.bg-image-ai-platform {
+  background-image: url(../../../assets/images/cube1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 600px;
+  right: 3rem;
+  z-index: 5;
+  position: relative;
+}
+
+/* ------------------------------------- Community Section ------------------------------------- */
+
+.bg-image-community {
+  background-image: url(../../../assets/images/cube2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 600px;
+  left: 3rem;
+  z-index: 5;
+  position: relative;
+}
+
+/* ------------------------------------- Contact Section ------------------------------------- */
+
+.bg-image-contact {
+  background-image: url(../../../assets/images/image3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 600px;
+  right: 3rem;
+  z-index: 5;
+  position: relative;
+}
