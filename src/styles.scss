@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ffff;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.font-sofachrome-italic {
+  font-family: "DS Sofachrome", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+input:focus {
+  outline: none;
+}
