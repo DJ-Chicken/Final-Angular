@@ -1,0 +1,36 @@
+<div class="flex justify-end py-2">
+  <div class="relative inline-block text-left" (click)="toggleMenu()">
+    <button
+      class="rounded bg-white py-2 text-black hover:text-cyan focus:text-cyan"
+      type="button"
+    >
+      {{ title }}
+      <svg
+        class="ml-0.5 inline-block h-4 w-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </button>
+    <div
+      *ngIf="isOpen"
+      class="absolute right-0 z-10 mt-2 w-36 flex origin-top-right flex-col rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+    >
+      <button
+        class="px-4 py-3 text-base text-black hover:bg-lightgray focus:bg-lightgray/40"
+        *ngFor="let menuItem of menuItems"
+        [routerLink]="['/routing-test']"
+      >
+        {{ menuItem }}
+      </button>
+    </div>
+  </div>
+</div>

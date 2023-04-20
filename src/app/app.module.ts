@@ -18,6 +18,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { ContactComponent } from './components/contact/contact.component';
+import { NavbarDropComponent } from './components/navbar-drop/navbar-drop.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     FooterComponent,
     LandingPageComponent,
     StaffComponent,
+    ContactComponent,
+    NavbarDropComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,16 +14,54 @@
     </div>
 
     <div
-      class="grid w-full grid-cols-2 items-center border-t-2 border-lightGray"
-    >
-      <div class="flex justify-between border-r-2 border-lightGray px-4 py-4">
-        <input type="text" placeholder="Search" />
-        <button
-          class="rounded-full hover:bg-lightgray active:bg-lightGray/60 py-1 px-1"
+    class="grid w-full grid-cols-2 items-center border-t-2 border-lightGray"
+  >
+    <div class="flex justify-between border-r-2 border-lightGray px-4 py-4">
+      <input
+        type="text"
+        [matAutocomplete]="auto"
+        placeholder="What are you looking for?"
+        class="w-full "
+      />
+      <button class="rounded-full hover:bg-lightgray active:bg-lightGray/60 py-1 px-1" >
+        <img src="../../../assets/icons/search.svg" alt="" class="h-6 w-6" />
+      </button>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option
+
+          *ngFor="let searchHits of searchHits"
+          [value]="searchHits.title"
         >
-          <img src="../../../assets/icons/search.svg" alt="" class="h-6 w-6" />
-        </button>
-      </div>
+          {{ searchHits.title }}
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+
+    <div class="flex justify-between pl-4 pr-8">
+      <app-navbar-drop
+        [title]="'Storage'"
+        [menuItems]="['Select 1', 'Select 2', 'Select 3']"
+      />
+      <app-navbar-drop [title]="'AI'" [menuItems]="['Select 1', 'Select 2']" />
+      <app-navbar-drop
+        [title]="'Community'"
+        [menuItems]="[
+          'Select 1',
+          'Select 2',
+          'Select 3',
+          'Select 4'
+        ]"
+      />
+      <button
+        class="rounded bg-white px-4 py-2 text-black hover:text-cyan focus:text-cyan"       >
+        Education
+      </button>
+      <app-navbar-drop
+        [title]="'About company'"
+        [menuItems]="['Select 1', 'Select 2', 'Select 3', 'Select 4']"
+      />
     </div>
   </div>
 </div>
+</div>
+
