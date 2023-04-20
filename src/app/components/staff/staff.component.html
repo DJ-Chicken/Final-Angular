@@ -1,1 +1,8 @@
-<p>staff works!</p>
+<div class="mx-auto my-10 flex w-full max-w-7xl justify-between text-center">
+  <div *ngFor="let staff of staffs | slice : 0 : 4">
+    <img src="{{ staff.img }}" alt="" class="mb-2 h-64 object-contain" />
+    <p class="text-lg font-semibold">{{ staff.name }}</p>
+    <p class="text-notGray">{{ staff.position }}</p>
+    <p class="text-notGray">{{ staff.description }}</p>
+  </div>
+</div>
