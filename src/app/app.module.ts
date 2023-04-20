@@ -1,3 +1,4 @@
+import { GoogleMapsModule } from '@angular/google-maps';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -40,6 +41,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatCheckboxModule,
     MatSnackBarModule,
     MatAutocompleteModule,
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

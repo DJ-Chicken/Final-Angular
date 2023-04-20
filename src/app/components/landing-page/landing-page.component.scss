@@ -74,3 +74,17 @@
   z-index: 5;
   position: relative;
 }
+
+.offWhite-background {
+  background-color: #f7f8fa;
+}
+
+.gray-background {
+  background-color: #505356;
+  color: white;
+}
+
+.offWhite-background:not(.gray-background):hover {
+  background-color: rgb(80 83 86 / 0.6);
+  color: white;
+}

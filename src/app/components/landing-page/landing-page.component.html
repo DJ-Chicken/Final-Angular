@@ -221,3 +221,57 @@
     </mat-tab-group>
   </div>
 </div>
+
+<!--  Video  -->
+
+<div class="flex items-center justify-center mb-6 pb-2">
+  <video
+    controls
+    src="../../../assets/videos/Elementor video placeholder.mp4"
+    type="video/mp4"
+  ></video>
+</div>
+
+<!--  Map  -->
+
+<div class="grid grid-cols-2 -space-x-12">
+  <div class="mx-auto my-auto">
+    <p class="mb-8 text-3xl font-semibold">We are located at:</p>
+    <div>
+      <div class="mb-10 flex">
+        <button
+          class="w-80 py-6 text-center text-xl text-black"
+          [ngClass]="{
+            'gray-background': activeTab === 'Place1',
+            'offWhite-background': activeTab !== 'Place1'
+          }"
+          (click)="setActiveTab('Place1')"
+        >
+          Place 1
+        </button>
+        <button
+          class="w-80 py-6 text-center text-xl text-black"
+          [ngClass]="{
+            'gray-background': activeTab === 'Place2',
+            'offWhite-background': activeTab !== 'Place2'
+          }"
+          (click)="setActiveTab('Place2')"
+        >
+          Place 2
+        </button>
+      </div>
+
+      <div class="space-y-5 text-xl" *ngIf="activeTab === 'Place1'">
+        <p class="text-xl font-semibold">Place 1</p>
+        <p>Moscow, Lefortovskaya embankment, building 1</p>
+        <p>Power Engineering MSTU im. N.E. Bauman</p>
+      </div>
+      <div class="space-y-5 text-xl" *ngIf="activeTab === 'Place2'">
+        <p class="text-xl font-semibold">Place 2</p>
+        <p>Moscow, Lefortovskaya embankment, building 2</p>
+        <p>Power Engineering MSTU im. N.E. Bauman</p>
+      </div>
+    </div>
+  </div>
+  <google-map [center]="center" [zoom]="12" width="100%"></google-map>
+</div>
