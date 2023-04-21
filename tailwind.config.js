@@ -10,6 +10,7 @@ module.exports = {
         notGray: "#818181",
         lightGray: "#d7d8d7",
         notWhite: "#f7f8fa",
+        crop: "#097a8070",
       },
     },
   },
